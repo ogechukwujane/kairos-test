@@ -1,0 +1,38 @@
+.ButtonComp {
+  color: #000;
+  height: 56px;
+  background: #f8b42d;
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+  &:disabled {
+    opacity: 0.5;
+  }
+  .btn_text {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  @-moz-keyframes spin {
+    100% {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .loader {
+    margin: auto;
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+  }
+}

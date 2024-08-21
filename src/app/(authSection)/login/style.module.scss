@@ -1,0 +1,83 @@
+.LoginStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  padding: 50px 0px;
+  height: 100%;
+  overflow-y: scroll;
+  .content_wrap {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    width: 640px;
+    position: relative;
+    .form_wrap {
+      padding: 20px;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+      width: 100%;
+      .header {
+        font-size: 20px;
+        font-weight: 700;
+        span {
+          color: #de1e1e;
+        }
+        @media (max-width: 650px) {
+          font-size: 18px;
+        }
+      }
+      .paragraph {
+        font-size: 16px;
+        font-weight: 300;
+      }
+    }
+    .footer_wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      .footer_text {
+        font-size: 16px;
+        font-weight: 400;
+        color: #1b1818;
+        min-width: fit-content;
+        @media (max-width: 650px) {
+          font-size: 12px;
+        }
+      }
+      .line {
+        width: 2px;
+        height: 20px;
+        border: none;
+        background: #1b1818;
+      }
+    }
+  }
+  .pattern1 {
+    position: absolute;
+    top: 0px;
+    right: -10px;
+    width: 50px;
+    height: 50px;
+  }
+  .pattern2 {
+    position: absolute;
+    top: 40%;
+    left: -100px;
+    width: 50px;
+    height: 50px;
+  }
+  .pattern3 {
+    position: absolute;
+    bottom: -60px;
+    right: -100px;
+    width: 100px;
+    height: 30px;
+  }
+}
